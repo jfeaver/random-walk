@@ -1,0 +1,57 @@
+div.distance-series {
+  position: relative;
+  height: 300px;
+  width: 1000px;
+  margin: 5px 10px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.dot {
+  height: 1px;
+  width: 1px;
+  background: black;
+  position: absolute;
+  display: inline-block;
+}
+
+div.walk-field {
+  height: 505px;
+  width: 505px;
+  position: relative;
+  border: 1px black solid;
+}
+
+div.walk-field div {
+  position: relative;
+}
+
+div.x-axis {
+  top: 252px; /* floor(walk-field height / 2) */
+  border-top: 1px dashed lightgray;
+}
+
+div.y-axis {
+  height: 100%;
+  left: 252px; /* floor(walk-field width / 2) */
+  border-left: 1px dashed lightgray;
+}
+
+div.walk-field div.walker-container {
+  position: absolute;
+  left: 250px; /* ([walk-field width] - [walker width]) / 2 */
+  top: 250px;
+}
+
+div.walk-field .walker {
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  background: black;
+  content: "";
+}
+
+div.walk-field .walker-path {
+  left: 2px;
+  top: 3px;
+}
